@@ -24,7 +24,7 @@
   text-decoration: none;
 }
 
-@media (max-width: 600px) {
+@media (max-width: 1024px) {
   .nav__list {
     display: none;
     flex-direction: column;

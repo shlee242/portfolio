@@ -6,20 +6,20 @@
 }
 
 .light {
-  --clr-bg: #FCFCFC;
+  --clr-bg: #fcfcfc;
   --clr-bg-alt: #fff;
-  --clr-fg: #28363B;
-  --clr-fg-alt: #192C2F;
-  --clr-primary: #00C47C;
+  --clr-fg: #555;
+  --clr-fg-alt: #444;
+  --clr-primary: #2978b5;
   --shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
 }
 
 .dark {
   --clr-bg: #23283e;
-  --clr-bg-alt: #303A56;
-  --clr-fg: #C2B2E6;
-  --clr-fg-alt: #E8D7F1;
-  --clr-primary: #CCF5AC;
+  --clr-bg-alt: #2a2f4c;
+  --clr-fg: #bdbddd;
+  --clr-fg-alt: #cdcdff;
+  --clr-primary: #90a0d9;
   --shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px,
     rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
 }

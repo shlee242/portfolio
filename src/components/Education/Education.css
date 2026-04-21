@@ -6,9 +6,12 @@
     background-color: var(--clr-bg-alt)
 }
 
-img {
-    height: 220px;
-    width: 220px;
+.school_image img {
+    padding: 2em;
+    height: 200px;
+    width: auto;
+    max-width: 300px;
+    object-fit: contain;
 }
 
 .school_image {
@@ -18,9 +21,40 @@ img {
     display: flex;
     flex-direction: row;
     justify-content: flex-start;
-    background-color: var(--clr-bg-alt)
+    background-color: var(--clr-bg-alt);
+    align-items: center;
 }
 
 .school_image:hover {
     transform: translateY(-7px);
+}
+
+.education__grid {
+    max-width: 850px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.school__links {
+    margin-top: 0.5em ;
+}
+
+@media (max-width: 1024px) {
+    .school_image {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .school_image img {
+        align-self: center;
+        height: 120px;
+        padding: 1em;
+    }
+
+    .school {
+        align-items: center;
+        padding: 0.25em;
+        width: 100%;
+        margin-bottom: 1em;
+    }
 }

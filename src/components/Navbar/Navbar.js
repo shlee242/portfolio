@@ -5,7 +5,13 @@ import WbSunnyRoundedIcon from '@material-ui/icons/WbSunnyRounded'
 import MenuIcon from '@material-ui/icons/Menu'
 import CloseIcon from '@material-ui/icons/Close'
 import { ThemeContext } from '../../contexts/theme'
-import { projects, skills, experience, education, contact } from '../../portfolio'
+import {
+  projects,
+  skills,
+  experience,
+  education,
+  contact,
+} from '../../portfolio'
 import './Navbar.css'
 
 const Navbar = () => {
@@ -32,16 +38,22 @@ const Navbar = () => {
         className='nav__list'
       >
         <li className='nav__list-item'>
-          <Link
-            to='/'
-            onClick={toggleNavList}
-            className='link link--nav'
-          >
+          <Link to='/' onClick={toggleNavList} className='link link--nav'>
             Home
           </Link>
         </li>
 
-
+        {isHomePage && experience.length ? (
+          <li className='nav__list-item'>
+            <button
+              type='button'
+              onClick={() => scrollToSection('experience')}
+              className='link link--nav nav__button'
+            >
+              Experience
+            </button>
+          </li>
+        ) : null}
 
         {isHomePage && projects.length ? (
           <li className='nav__list-item'>
@@ -51,6 +63,18 @@ const Navbar = () => {
               className='link link--nav nav__button'
             >
               Projects
+            </button>
+          </li>
+        ) : null}
+
+        {isHomePage && education.length ? (
+          <li className='nav__list-item'>
+            <button
+              type='button'
+              onClick={() => scrollToSection('education')}
+              className='link link--nav nav__button'
+            >
+              Education
             </button>
           </li>
         ) : null}
@@ -67,30 +91,6 @@ const Navbar = () => {
           </li>
         ) : null}
 
-        {isHomePage && experience.length ? (
-              <li className='nav__list-item'>
-                <button
-                  type='button'
-                  onClick={() => scrollToSection('experience')}
-                  className='link link--nav nav__button'
-                >
-                  Experience
-                </button>
-              </li>
-            ) : null}
-
-        {isHomePage && education.length ? (
-          <li className='nav__list-item'>
-            <button
-              type='button'
-              onClick={() => scrollToSection('education')}
-              className='link link--nav nav__button'
-            >
-              Education
-            </button>
-          </li>
-        ) : null}
-
         {isHomePage && contact.email ? (
           <li className='nav__list-item'>
             <button
@@ -102,9 +102,7 @@ const Navbar = () => {
             </button>
           </li>
         ) : null}
-
       </ul>
-      
 
       <button
         type='button'

@@ -113,7 +113,7 @@ fi
 print_status "Deploying to GitHub Pages..."
 if npm run deploy; then
     print_success "Deployment completed successfully!"
-    print_status "Your site should be available at: https://prachipatil7.github.io/portfolio-site"
+    print_status "Your site should be available at: https://shlee242.github.io/portfolio"
     print_status "Note: It may take a few minutes for changes to appear on GitHub Pages."
 else
     print_error "Deployment failed. Please check the error messages above."

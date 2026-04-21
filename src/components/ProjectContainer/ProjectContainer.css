@@ -31,7 +31,7 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  margin: 1.2em 0;
+  margin: 0.5em 0;
 }
 
 .project__stack-item {
@@ -42,7 +42,7 @@
 }
 
 .project .link--icon {
-  margin-left: 0.5em;
+  margin: 0.5em;
 }
 
 .project__read-more {
@@ -52,4 +52,22 @@
 .project__read-more .btn {
   font-size: 0.9em;
   padding: 0.5em 1em;
+}
+
+.project img {
+    height: 220px;
+    width: 220px;
+}
+
+.project__description-list {
+  padding-left: 1rem;
+  margin-top: 1rem;
+  text-align: left;
+  list-style-type: disc;
+}
+
+.project__description-item {
+  margin-bottom: 0.5rem;
+  font-size: 0.9rem;
+  line-height: 1.4;
 }

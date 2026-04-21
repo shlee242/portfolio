@@ -1,17 +1,17 @@
 import About from '../components/About/About'
-import Projects from '../components/Projects/Projects'
-import Skills from '../components/Skills/Skills'
 import Experience from '../components/Experience/Experience'
+import Projects from '../components/Projects/Projects'
 import Education from '../components/Education/Education'
+import Skills from '../components/Skills/Skills'
 import Contact from '../components/Contact/Contact'
 
 const Home = () => (
   <main>
     <About />
-    <Projects />
-    <Skills />
     <Experience />
+    <Projects />
     <Education />
+    <Skills />
     <Contact />
   </main>
 )

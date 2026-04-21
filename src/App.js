@@ -3,7 +3,6 @@ import { HashRouter as Router, Routes, Route } from 'react-router-dom'
 import { ThemeContext } from './contexts/theme'
 import Header from './components/Header/Header'
 import Home from './pages/Home'
-import BlogPost from './components/BlogPost/BlogPost'
 import ScrollToTop from './components/ScrollToTop/ScrollToTop'
 import Footer from './components/Footer/Footer'
 import './App.css'
@@ -18,7 +17,6 @@ const App = () => {
 
         <Routes>
           <Route path="/" element={<Home />} />
-          <Route path="/project-blog/:id" element={<BlogPost />} />
         </Routes>
 
         <ScrollToTop />
