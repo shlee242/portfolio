@@ -6,10 +6,11 @@ import MenuIcon from '@material-ui/icons/Menu'
 import CloseIcon from '@material-ui/icons/Close'
 import { ThemeContext } from '../../contexts/theme'
 import {
-  projects,
-  skills,
   experience,
+  projects,
   education,
+  certificates,
+  skills,
   contact,
 } from '../../portfolio'
 import './Navbar.css'
@@ -75,6 +76,18 @@ const Navbar = () => {
               className='link link--nav nav__button'
             >
               Education
+            </button>
+          </li>
+        ) : null}
+
+        {isHomePage && certificates.length ? (
+          <li className='nav__list-item'>
+            <button
+              type='button'
+              onClick={() => scrollToSection('certificates')}
+              className='link link--nav nav__button'
+            >
+              certificates
             </button>
           </li>
         ) : null}

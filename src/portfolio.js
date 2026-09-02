@@ -45,6 +45,31 @@ const experience = [
 ]
 
 const projectCategories = {
+  'Side Project': [
+    {
+      name: 'AI-assisted Crypto Investigator',
+      subtitle:
+        'LLM, RAG, Graph Analysis를 활용한 가상자산 금융범죄 조사 지원 시스템',
+      description: [
+        'Ethereum 지갑의 온체인 거래 데이터를 수집하고 NetworkX 기반 Transaction Graph를 생성하여 자금 흐름과 주요 Counterparty를 시각화',
+        '규칙 기반 Risk 분석 시스템을 구현하여 의심 거래 패턴을 탐지하고 설명 가능한 Risk Score 제공',
+        'AML 관련 문서를 Vector DB에 구축하고 RAG를 활용하여 탐지된 Risk Indicator와 관련된 규제 및 금융범죄 유형 정보를 검색',
+        'LangGraph 기반 AI Agent가 Blockchain Data, Graph Analysis, Risk Evidence, RAG 결과를 종합하여 근거 기반의 한국어 Investigation Report 생성',
+      ],
+      stack: [
+        'Python',
+        'Streamlit',
+        'NetworkX',
+        'LangGraph',
+        'Chroma',
+        'OpenAI API',
+        'Etherscan API',
+      ],
+      sourceCode: 'https://github.com/shlee242/crypto-investigator',
+      game: 'https://shlee242-crypto-investigator.streamlit.app/',
+      date: '2026.09',
+    },
+  ],
   '(주) 블록오디세이': [
     {
       name: '블록체인 비즈니스 전략 리서치 및 기술 컨설팅',
@@ -226,6 +251,14 @@ const education = [
   },
 ]
 
+const certificates = [
+  // certificates can be added or removed
+  '빅데이터분석기사',
+  '정보처리기사',
+  'AWS Certified Solutions Architect - Associate',
+  'TOEIC 920',
+]
+
 const skills = [
   // skills can be added or removed
   // if there are no skills, Skills section won't show up
@@ -252,6 +285,7 @@ export {
   projects,
   projectCategories,
   education,
+  certificates,
   skills,
   contact,
 }

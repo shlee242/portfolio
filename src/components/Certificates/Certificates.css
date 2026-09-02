@@ -1,0 +1,23 @@
+.certificates__list {
+  max-width: 500px;
+  width: 95%;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.certificates__container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 3px
+}
+
+.certificates__container h5 {
+  padding: 5px;
+}
+
+.certificates__list-item {
+  margin: 0.5em;
+}
